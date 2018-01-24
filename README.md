@@ -1,2 +1,2 @@
 # beautiful-jbake
-JBake freemarker template adapted from beautiful-jekyll.
+JBake template adapted from https://github.com/daattali/beautiful-jekyll[beautiful-jekyll].
