@@ -3,7 +3,7 @@
 ## About
 
 JBake template adapted from [beautiful-jekyll](https://github.com/daattali/beautiful-jekyll).
-Live example can be seen [here](https://github.id/Yamane/bj-demo). 
+Live example can be seen [here](https://yamane.github.io/bj-demo/). 
 
 
 ## Quick start
