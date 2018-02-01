@@ -1,4 +1,8 @@
 <#include "excerpt-function.ftl">
+<#assign include_type = "page">
+<#assign include_title = config.site_title>
+<#assign include_subtitle = config.site_subtitle!>
+<#assign include_bigimg = config.index_bigimg!>
 <!DOCTYPE html>
 <html lang="${config.site_lang}">
 
@@ -8,45 +12,7 @@
 
 <#include "nav.ftl">
 
-<#if (config.index_bigimg)?has_content>
-<div id="header-big-imgs" data-num-img=1 data-img-src-1="${content.rootpath!}${config.index_bigimg}"></div>
-</#if>
-
-<header class="header-section<#if (config.index_bigimg)?has_content> has-img</#if>">
-
-<#if (config.index_bigimg)?has_content>
-<div class="big-img intro-header">
-<div class="container">
-<div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-<div class="page-heading">
-  <h1>${config.site_title}</h1>
-  <#if (config.site_subtitle)?has_content>
-  <hr class="small">
-  <span class="page-subheading">${config.site_subtitle}</span>
-  </#if>
-</div>
-</div>
-</div>
-</div>
-</div>
-</#if>
-<div class="intro-header no-img">
-<div class="container">
-<div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-<div class="page-heading">
-  <h1>${config.site_title}</h1>
-  <#if (config.site_subtitle)?has_content>
-  <hr class="small">
-  <span class="page-subheading">${config.site_subtitle}</span>
-  </#if>
-</div>
-</div>
-</div>
-</div>
-</div>
-</header>
+<#include "header.ftl">
 
 <div class="container" role="main">
 <div class="row">

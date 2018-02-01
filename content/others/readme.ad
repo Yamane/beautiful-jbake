@@ -58,10 +58,17 @@ $ jbake -b -s
 |site.title|○|サイトのタイトル。index.html に大きく表示されてるやつ。
 |site.subtitle||サイトのサブタイトル。index.html のタイトルの下の行に表示されているやつ。
 |site.avatar||サイトの上中央に表示されているアバターアイコン。
-|index.bigimg||インデックスページに表示される画像。大きめのやつ。
+|index.bigimg||インデックスページのタイトルの後ろに表示される画像。
 |index.paginate||インデックスページをページングするかどうか。
 |index.posts_per_page|*|インデックスページをページングする場合、１ページに何件表示するか。`index.paginate` をtrueにする場合は必須。
 |index.excerpt.size|○|インデックスページや、タグ一覧ページに表示するコンテンツ内容の抜粋の文字数。
+
+|archive.title||アーカイブページのタイトル。指定しない場合は「Archive」。
+|archive.subtitle||アーカイブページのサブタイトル。
+|archive.bigimg||アーカイブページのタイトルの後ろに表示される画像。
+|tags.title||タグ一覧ページのタイトル。指定しない場合は「Tags」。
+|tags.subtitle||タグ一覧ページのサブタイトル。
+|tags.bigimg||タグ一覧ページのタイトルの後ろに表示される画像。
 
 |date.format|○|日付を表示する部分のフォーマット。
 |month.format|○|月を表示する部分のフォーマット。
@@ -83,9 +90,7 @@ $ jbake -b -s
 |author.facebook||フッターのメールアイコンでリンクするFacebookアカウント。
 |author.twitter||フッターのメールアイコンでリンクするTwitterアカウント。
 |author.github||フッターのメールアイコンでリンクするGitHubアカウント。
-|render.archive|-|JBake制御にてアーカイブページの生成を制御するかどうかのフラグ。このテンプレートでは独自にアーカイブページを出力しているので、falseのまま書き換えないようにしてください。
 |template.simple.file|-|コンテンツヘッダ部分にあまり装飾がないページタイプ `simple` のためのテンプレート定義。このページで使ってます。
-|template.archive.file|-|アーカイブページのためのテンプレート定義。書き換えないこと推奨。
 |template.tag-list.file|-|タグ一覧ページのためのテンプレート定義。書き換えないこと推奨。
 |template.maincss.file|-
 .2+|スタイルシートの一部記述を `jbake.properties` で書き換えられるようにするために作ったテンプレート定義。書き換えないこと推奨。
