@@ -18,7 +18,6 @@
 <article role="main" class="blog-post">
 ${content.body}
 </article>
-<#include "disqus.ftl">
 </div>
 </div>
 </div>
