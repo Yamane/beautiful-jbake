@@ -1,4 +1,10 @@
 <#assign include_type = "page">
+<#assign include_title = config.tags_title!>
+<#if !include_title?has_content>
+  <#assign include_title = "Tags">
+</#if>
+<#assign include_subtitle = config.tags_subtitle!>
+<#assign include_bigimg = config.tags_bigimg!>
 <!DOCTYPE html>
 <html lang="${config.site_lang}">
 

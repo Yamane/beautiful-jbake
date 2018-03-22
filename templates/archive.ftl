@@ -1,4 +1,10 @@
 <#assign include_type = "page">
+<#assign include_title = config.archive_title!>
+<#if !include_title?has_content>
+  <#assign include_title = "Archive">
+</#if>
+<#assign include_subtitle = config.archive_subtitle!>
+<#assign include_bigimg = config.archive_bigimg!>
 <!DOCTYPE html>
 <html lang="${config.site_lang}">
 
